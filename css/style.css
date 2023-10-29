@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.app__title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #999999;
+}
+.app__time {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  font-size: 25px;
+  color: #999999;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.app__time #time {
+  color: tomato;
+}
+.app__header {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 100;
+}
+.app__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.app__count #result-header {
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+}
+.app__count #result-header svg {
+  width: 100%;
+}
+.app__count #result {
+  color: tomato;
+  margin-left: 10px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.input__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 10px;
+  margin-bottom: 20px;
+}
+.input__row .add-time {
+  color: #999999;
+  font-size: 12px;
+}
+.input__row button {
+  border: none;
+  background-color: transparent;
+  color: tomato;
+  font-size: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+.input__row button:hover {
+  color: #e02200;
+}
+.input__row input {
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  font-size: 30px;
+  line-height: 40px;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.game {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.game__box {
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  color: tomato;
+  z-index: 3;
+}
+.game__box svg {
+  pointer-events: none;
+}
+
+.btn {
+  display: block;
+  border: none;
+  font-size: 23px;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background-color: tomato;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  color: tomato;
+  background-color: #ffffff;
+}
+
+.hide {
+  display: none;
+}
