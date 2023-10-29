@@ -16,6 +16,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: url(../images/4.png) 25 25, pointer !important;
 }
 
 .app {

@@ -19,6 +19,7 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	cursor: url(../images/4.png) 25 25, pointer !important;
 }
 .app {
 	position: relative;
@@ -27,7 +28,7 @@ body {
 	text-align: center;
 	color: $textColor;
 	background-color: $backgroundColor;
-
+	
 	// .app__title
 	&__title {
 		font-size: 30px;
@@ -160,7 +161,7 @@ body {
 	padding: 7px 10px;
 	background-color: $accent;
 	color: $textColor;
-	cursor: pointer;
+	cursor: pointer;	
 	transition: 0.3s;
 	&:hover {
 		color: $accent;

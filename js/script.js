@@ -30,7 +30,7 @@ function startGame() {
 	setGameTime()
 	$gameTime.setAttribute('disabled', 'true')
 	isGameStarted = true
-	$game.style.cursor = 'url(../images/4.png) 25 25, pointer'
+	$game.style.cursor = 'url(../images/4.png) 25 25, pointer !important'
 	let interval = setInterval(function () {
 		let time = +$time.textContent
 
